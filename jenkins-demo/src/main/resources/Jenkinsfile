@@ -1,6 +1,6 @@
 pipeline{
     agent any
-
+    stages{
     stage('SCM Checkout'){
         steps{
             echo 'Checkout Git Repository'
@@ -20,5 +20,6 @@ pipeline{
         steps{
             echo 'Deploy Project'
         }
+    }
     }
 }
