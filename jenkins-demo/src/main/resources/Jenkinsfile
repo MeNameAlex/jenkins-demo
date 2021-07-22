@@ -1,21 +1,20 @@
 pipeline{
     agent any
     stages{
-    }
-    stage('Build MVN'){
-        steps{
-            echo 'Build Maven Project'
+        stage('Build MVN'){
+            steps{
+                echo 'Build Maven Project'
+            }
         }
-    }
-    stage('Test'){
-        steps{
-            echo 'Testing..'
+        stage('Test'){
+            steps{
+                echo 'Testing..'
+            }
         }
-    }
-    stage('Deploy'){
-        steps{
-            echo 'Deploy Project'
+        stage('Deploy'){
+            steps{
+                echo 'Deploy Project'
+            }
         }
-    }
     }
 }
