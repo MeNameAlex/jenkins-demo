@@ -1,0 +1,24 @@
+pipeline{
+    agent any
+
+    stage('SCM Checkout'){
+        steps{
+            echo 'Checkout Git Repository'
+        }
+    }
+    stage('Build MVN'){
+        steps{
+            echo 'Build Maven Project'
+        }
+    }
+    stage('Test'){
+        steps{
+            echo 'Testing..'
+        }
+    }
+    stage('Deploy'){
+        steps{
+            echo 'Deploy Project'
+        }
+    }
+}
