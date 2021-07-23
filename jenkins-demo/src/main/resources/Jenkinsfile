@@ -16,9 +16,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 sh "echo Deploying Project ${env.HOME}"
-                step{
-                    app = docker.build("jenkins-demo")
-                }
+                docker.build("jenkins-demo")
             }
         }
     }
