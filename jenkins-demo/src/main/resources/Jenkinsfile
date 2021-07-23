@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                echo 'Deploy Project'
+                echo 'Deploy Project in ${WORKSPACE}'
             }
         }
     }
