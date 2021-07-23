@@ -19,7 +19,7 @@ pipeline{
                 dir("/jenkins-demo/src/main/resources"){
                 sh "ls"
                 script{
-                    docker.build("jenkins-demo")
+                    docker.build("jenkins-demo:latest")
                 }
                }
             }
