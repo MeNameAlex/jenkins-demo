@@ -1,6 +1,7 @@
 pipeline{
     agent any
     stages{
+        def rootPath = "${WORKSPACE}"
         stage('Build MVN'){
             steps{
                 echo 'Build Maven Project'
@@ -15,7 +16,6 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                def rootPath = "${WORKSPACE}"
                 sh "echo ${rootPath}"
             }
         }
