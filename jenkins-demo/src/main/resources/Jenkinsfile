@@ -16,9 +16,11 @@ pipeline{
         stage('Deploy'){
             steps{
                 sh "echo Deploying Project ${env.HOME}"
+                dir("/jenkins-demo/src/main/resources"){
                 script{
                     docker.build("jenkins-demo")
                 }
+               }
             }
         }
     }
