@@ -15,7 +15,8 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                echo 'Deploy Project in ' + ${WORKSPACE}
+                def rootPath = "${WORKSPACE}"
+                sh "echo ${rootPath}"
             }
         }
     }
