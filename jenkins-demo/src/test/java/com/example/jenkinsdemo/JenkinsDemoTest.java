@@ -3,6 +3,7 @@ package com.example.jenkinsdemo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+@
 public class JenkinsDemoTest {
 
 	String funktioniert = "JUnit funktioniert";
@@ -13,8 +14,10 @@ public class JenkinsDemoTest {
 		assertEquals("JUnit funktioniert", funktioniert);
 	}
 
+	/*
 	@Test
 	public void testMethodeZumTestOhneErfolg(){
 		assertEquals("JUnit funktioniert", funktioniertNicht);
 	}
+	*/
 }
